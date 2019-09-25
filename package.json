@@ -11,7 +11,8 @@
     "dev": "node server & webpack --watch",
     "server": "node server",
     "start": "webpack && node server",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "killit": "killall -s KILL node"
   },
   "babel": {
     "presets": [
@@ -30,6 +31,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "geolib": "^3.0.4",
     "superagent": "^5.0.2"
   },
   "devDependencies": {
