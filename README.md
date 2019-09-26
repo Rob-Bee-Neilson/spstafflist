@@ -2,12 +2,12 @@
 
 requirements:
 access data from staff_list.json
-remove titles in names
-sort data by name
+(remove titles in names?) - stretch goal
 filter data by location
+sort data by name
 render list of names
 
 
-1 set up environment
-2 install npm geolib
-access data from staff_list.json
+I decided to filter the data by location first as I would probably want to mutate the data later (e.g. remove any titles from the names) and I would rather not do this over the whole data set.
+I thought filtering by location would be the more difficult part but it was delightfully easy using the npm package (GeoLib).
+Once I could generate and display the list I wanted in App.jsx I broke the code out into components.

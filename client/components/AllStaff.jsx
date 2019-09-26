@@ -6,14 +6,15 @@ const staffInfo = Object.values(data)[0]
 let allStaff = staffInfo.map(staff => {return staff.name}).sort();
 
 const AllStaff = () => {
-    console.log(allStaff)
     return (
         <React.Fragment>
+
             <ul>
                 {allStaff.map(show=>{
                     return <li key={show}>{show}</li>
                 })}
             </ul>
+            
         </React.Fragment>
     )
 }
